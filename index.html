@@ -12,59 +12,60 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Fylo data storage component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <!-- FIRST CARD -->
-    <div class="div">
-      <img class="div__logo" src="./images/logo.svg" alt="logo fylo" />
-      <div class="div__icons">
-        <img
-          src="./images/icon-document.svg"
-          alt="document icon"
-          class="div__icons--img"
-        />
-        <img
-          src="./images/icon-folder.svg"
-          alt="folder icon"
-          class="div__icons--img"
-        />
-        <img
-          src="./images/icon-upload.svg"
-          alt="upload icon"
-          class="div__icons--img"
-        />
+    <main class="main">
+      <!-- FIRST CARD -->
+      <div class="div">
+        <div class="div__items">
+          <img class="div__logo" src="./images/logo.svg" alt="logo fylo" />
+          <div class="div__icons">
+            <a href="" class="div__icons--a">
+              <img
+                src="./images/icon-document.svg"
+                alt="document icon"
+                class="div__icons--img"
+              />
+            </a>
+            <a href="" class="div__icons--a folder">
+              <img
+                src="./images/icon-folder.svg"
+                alt="folder icon"
+                class="div__icons--img"
+              />
+            </a>
+            <a href="" class="div__icons--a cloud">
+              <img
+                src="./images/icon-upload.svg"
+                alt="upload icon"
+                class="div__icons--img cloud__img"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- SECOND CARD -->
-    <div class="stats">
-      <span class="stats__815">You’ve used 815 GB of your storage</span>
-      <div class="stats__185">185 GB Left</div>
-
-      <!-- BAR -->
-      <div class="bar">
-        <div class="bar__content"></div>
-        <div class="bar__clip"></div>
+      <!-- SECOND CARD -->
+      <div class="stats">
+        <span class="stats__815">You’ve used 815 GB of your storage</span>
+        <div class="stats__185">185 GB Left</div>
+        <!-- BAR -->
+        <div class="bar">
+          <div class="bar__content"></div>
+          <div class="bar__clip"></div>
+        </div>
+        <div class="stats__storage">
+          <span class="stats__storage--0">0 GB</span>
+          <span class="stats__storage--1000">1000 GB</span>
+        </div>
       </div>
-
-      <div class="stats__storage">
-        <span class="stats__storage--0">0 GB</span>
-        <span class="stats__storage--1000">1000 GB</span>
-      </div>
-    </div>
+    </main>
 
     <!-- <div class="attribution">
       Challenge by

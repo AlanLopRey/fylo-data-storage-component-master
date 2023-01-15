@@ -57,4 +57,72 @@ select {
   font: inherit;
 }
 
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(229deg, 57%, 11%);
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 200px;
+  background-color: hsl(228deg, 56%, 26%);
+  top: 50px;
+  border-radius: 20px;
+  border-top-right-radius: 90px;
+}
+.div__items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  right: 35px;
+}
+.div__logo {
+  width: 130px;
+}
+.div__icons {
+  display: flex;
+  width: 160px;
+  height: 50px;
+  justify-content: space-between;
+}
+.div__icons--a {
+  position: relative;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  bottom: -10px;
+  background-color: hsl(229deg, 57%, 11%);
+  border-radius: 10px;
+}
+.div__icons--img {
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  left: 8px;
+  top: 8px;
+}
+
+.stats {
+  position: relative;
+  background-color: hsl(228deg, 56%, 26%);
+  width: 330px;
+  height: 160px;
+  top: 100px;
+}
+
 /*# sourceMappingURL=styles.css.map */
