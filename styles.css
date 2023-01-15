@@ -117,6 +117,10 @@ body {
   top: 8px;
 }
 
+.cloud__img {
+  top: 10px;
+}
+
 .stats {
   position: relative;
   background-color: hsl(228deg, 56%, 26%);

@@ -68,7 +68,11 @@ body {
     }
   }
 }
-
+.cloud {
+  &__img {
+    top: 10px;
+  }
+}
 .stats {
   position: relative;
   background-color: $Dark-Blue;
