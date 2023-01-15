@@ -9,7 +9,7 @@ $Very-Dark-Blue: hsl(229, 57%, 11%);
 
 $font: "Raleway", sans-serif;
 body {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: $font;
   background-color: $Very-Dark-Blue;
   background-image: url(./images/bg-mobile.png);
@@ -31,67 +31,67 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 330px;
-  height: 200px;
+  width: 20.625rem;
+  height: 12.5rem;
   background-color: $Dark-Blue;
   margin-top: 10vh;
-  border-radius: 15px;
-  border-top-right-radius: 90px;
+  border-radius: 0.9375rem;
+  border-top-right-radius: 5.625rem;
   &__items {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 6.25rem;
     justify-content: space-between;
-    right: 35px;
+    right: 2.1875rem;
   }
   &__logo {
-    width: 130px;
+    width: 8.125rem;
   }
   &__icons {
     display: flex;
-    width: 160px;
-    height: 50px;
+    width: 10rem;
+    height: 3.125rem;
     justify-content: space-between;
 
     &--a {
       position: relative;
       align-self: center;
-      width: 40px;
-      height: 40px;
-      bottom: -10px;
+      width: 2.5rem;
+      height: 2.5rem;
+      bottom: -0.625rem;
       background-color: $Very-Dark-Blue;
-      border-radius: 10px;
+      border-radius: 0.625rem;
     }
     &--img {
       align-self: center;
       position: relative;
       z-index: 1;
-      left: 8px;
-      top: 8px;
+      left: 0.5rem;
+      top: 0.5rem;
     }
   }
 }
 .cloud {
   &__img {
-    top: 10px;
+    top: 0.625rem;
   }
 }
 
 .stats {
   position: relative;
   background-color: $Dark-Blue;
-  width: 330px;
-  height: 160px;
-  margin-top: 20px;
-  border-radius: 15px;
+  width: 20.625rem;
+  height: 10rem;
+  margin-top: 1.25rem;
+  border-radius: 0.9375rem;
 
   &__185 {
-    width: 180px;
-    height: 75px;
+    width: 11.25rem;
+    height: 4.6875rem;
     position: absolute;
     background-color: $Pale-Blue;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     top: 75%;
     left: 23%;
     text-align: center;
@@ -108,53 +108,102 @@ body {
   &__815 {
     color: $Pale-Blue;
     position: relative;
-    top: 25px;
-    margin-left: 35px;
+    top: 1.5625rem;
+    margin-left: 2.1875rem;
   }
 }
 .storage {
-  width: 260px;
-  height: 30px;
+  width: 16.25rem;
+  height: 1.875rem;
   display: flex;
   justify-content: space-between;
-  margin-left: 25px;
+  margin-left: 1.5625rem;
   position: relative;
-  top: 40px;
+  top: 2.5rem;
   color: $Pale-Blue;
-  &--0 {
-  }
-  &--1000 {
-  }
 }
 
 .bar {
-  width: 260px;
-  height: 25px;
-  border-radius: 50px;
+  width: 16.25rem;
+  height: 1.5625rem;
+  border-radius: 3.125rem;
   position: relative;
-  left: 25px;
-  top: 35px;
+  left: 1.5625rem;
+  top: 2.1875rem;
   background-color: $Very-Dark-Blue;
   &__clip {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
-    top: 3px;
-    left: 175px;
+    top: 0.1875rem;
+    left: 10.9375rem;
     background-color: $Pale-Blue;
   }
   &__content {
-    width: 190px;
-    height: 19px;
+    width: 11.875rem;
+    height: 1.1875rem;
     position: absolute;
-    top: 3px;
-    left: 4px;
-    border-radius: 50px;
+    top: 0.1875rem;
+    left: 0.25rem;
+    border-radius: 3.125rem;
     background-image: linear-gradient(
       90deg,
       rgba(255, 163, 153, 1) 35%,
       rgba(255, 77, 151, 1) 100%
     );
+  }
+}
+
+@media screen and (min-width: 56.25rem) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-size: 100vw;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
+
+  .main {
+    position: relative;
+    top: 11.875rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .stats {
+    width: 34.0625rem;
+    top: 2.8125rem;
+    left: 1.5625rem;
+    padding-top: 1.25rem;
+    &__185 {
+      top: -3.125rem;
+      left: 20.625rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2.25rem;
+        right: -0.875rem;
+        z-index: 5;
+        rotate: 25deg;
+        width: 0;
+        height: 0;
+        border-left: 1.5625rem solid transparent;
+        border-right: 1.5625rem solid transparent;
+        border-bottom: 3.125rem solid hsl(243deg, 100%, 93%);
+      }
+    }
+
+    .bar {
+      width: 30.625rem;
+      &__clip {
+        left: 21.25rem;
+      }
+      &__content {
+        width: 22.1875rem;
+      }
+    }
+    .storage {
+      width: 30.625rem;
+    }
   }
 }
