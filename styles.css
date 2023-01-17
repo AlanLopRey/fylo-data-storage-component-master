@@ -72,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: 10vh;
 }
 
 .div {
@@ -169,6 +170,12 @@ body {
   top: 2.5rem;
   color: hsl(243deg, 100%, 93%);
 }
+.storage__0 {
+  font-weight: 700;
+}
+.storage__1000 {
+  font-weight: 700;
+}
 
 .bar {
   width: 80%;
@@ -203,14 +210,15 @@ body {
     width: 0%;
   }
   100% {
-    width: 71%;
+    width: 72%;
   }
 }
 .transition1 {
   animation-name: content-expand1;
-  animation-duration: 1.9s;
+  animation-duration: 1.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 @keyframes clip-move1 {
@@ -223,9 +231,10 @@ body {
 }
 .clip-move1 {
   animation-name: clip-move1;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 @media screen and (min-width: 1000px) {
@@ -280,7 +289,7 @@ body {
 @media screen and (min-width: 1440px) {
   .main {
     position: relative;
-    top: 20vh;
+    top: 25vh;
     flex-direction: row;
     justify-content: center;
   }
