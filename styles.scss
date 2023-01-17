@@ -124,7 +124,8 @@ body {
 }
 
 .bar {
-  width: 16.25rem;
+  // width: 16.25rem;
+  width: 80%;
   height: 1.5625rem;
   border-radius: 3.125rem;
   position: relative;
@@ -137,11 +138,13 @@ body {
     height: 1.25rem;
     border-radius: 50%;
     top: 0.1875rem;
-    left: 10.9375rem;
+    // left: 10.9375rem;
+    left: 50%;
     background-color: $Pale-Blue;
   }
   &__content {
-    width: 11.875rem;
+    // width: 11.875rem;
+    width: 50%;
     height: 1.1875rem;
     position: absolute;
     top: 0.1875rem;
@@ -154,8 +157,38 @@ body {
     );
   }
 }
+@keyframes content-expand1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 71%;
+  }
+}
 
-@media screen and (min-width: 56.25rem) {
+.transition1 {
+  animation-name: content-expand1;
+  animation-duration: 1.9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes clip-move1 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 70%;
+  }
+}
+.clip-move1 {
+  animation-name: clip-move1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 1000px) {
   body {
     background-image: url(./images/bg-desktop.png);
     background-size: 100vw;
@@ -165,7 +198,7 @@ body {
 
   .main {
     position: relative;
-    top: 11.875rem;
+    top: 35vh;
     flex-direction: row;
     justify-content: center;
   }
@@ -205,5 +238,14 @@ body {
     .storage {
       width: 30.625rem;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    position: relative;
+    top: 20vh;
+    flex-direction: row;
+    justify-content: center;
   }
 }
